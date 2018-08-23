@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "746985607228",
+    "firebase_url": "https://cogent-script-210800.firebaseio.com",
+    "project_id": "cogent-script-210800",
+    "storage_bucket": "cogent-script-210800.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746985607228:android:945ba7abea88b6f6",
+        "android_client_info": {
+          "package_name": "com.example.abrahamgeorgej.simple_sign_in"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "746985607228-ua48tf9l85bf7he2b56etejg604pi86i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.abrahamgeorgej.simple_sign_in",
+            "certificate_hash": "f3f50b6ca3a04dd0023879310d51b662b921e6c9"
+          }
+        },
+        {
+          "client_id": "746985607228-a6ojad5hvvcchokislcoo6sj189mqhmc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7CskWfAFKuWQeMbb7YBqKDLmaeYPda5k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "746985607228-a6ojad5hvvcchokislcoo6sj189mqhmc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

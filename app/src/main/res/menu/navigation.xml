@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_explore"
+        android:icon="@drawable/baseline_explore_white_24"
+        android:title="@string/title_explore" />
+
+    <item
+        android:id="@+id/navigation_favorites"
+        android:icon="@drawable/baseline_favorite_white_24"
+        android:title="@string/title_Favorites" />
+
+    <!--<item-->
+        <!--android:id="@+id/navigation_notifications"-->
+        <!--android:icon="@drawable/baseline_favorite_white_24"-->
+        <!--android:title="@string/title_notifications" />-->
+
+    <item
+        android:id="@+id/navigation_location"
+        android:icon="@drawable/baseline_place_black_24"
+        android:title="@string/title_maps" />
+
+    <!--<item-->
+        <!--android:id="@+id/navigation_create"-->
+        <!--android:icon="@drawable/baseline_favorite_white_24"-->
+        <!--android:title="@string/title_create" />-->
+
+</menu>

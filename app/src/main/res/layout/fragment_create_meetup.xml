@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.CreateMeetup">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Create New Meetup"
+            android:textSize="36sp"
+            android:textAlignment="center" />
+
+        <!--<View-->
+            <!--android:id="@+id/divider"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/colorAccent" />-->
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <!--<TextView-->
+        <!--android:id="@+id/nameTextView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="16dp"-->
+        <!--android:text="Meetup Name" />-->
+
+    <EditText
+        android:id="@+id/meetupName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="Please enter meetup name" />
+    </LinearLayout>
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView4"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:layout_marginStart="40dp"-->
+        <!--android:text="TextView"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/textView5"-->
+        <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+    <EditText
+        android:id="@+id/meetupDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="Please enter meetup description" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView5"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:text="TextView"-->
+        <!--app:layout_constraintEnd_toStartOf="@+id/spinner2"-->
+        <!--app:layout_constraintHorizontal_bias="0.838"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--tools:layout_editor_absoluteY="359dp" />-->
+
+    <Spinner
+        android:id="@+id/themeChooser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/free"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Free" />
+
+        <CheckBox
+            android:id="@+id/paid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Paid" />
+
+        <CheckBox
+            android:id="@+id/kidFriendly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Kid Friendly" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/weekend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Weekend" />
+
+        <CheckBox
+            android:id="@+id/onCampus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="On Campus" />
+
+        <CheckBox
+            android:id="@+id/offCampus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Off Campus" />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="16dp"
+        android:weightSum="2">
+
+        <!--<Button-->
+            <!--android:id="@+id/cancel"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Cancel"-->
+            <!--android:onClick="cancel"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_margin="8dp"-->
+            <!--android:background="@color/colorAccent"/>-->
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/round"
+            android:tint="@android:color/black"
+            android:scaleType="fitXY"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:onClick="chooseAndUpload"
+            android:padding="5dp"
+            android:src="@drawable/baseline_add_photo_alternate_24" />
+
+        <ImageButton
+            android:id="@+id/maps"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/round"
+            android:tint="@android:color/black"
+            android:layout_weight="1"
+            android:onClick="onAddPlaceButtonClicked"
+            android:scaleType="fitXY"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:src="@drawable/baseline_place_black_24" />
+
+        <!--<Button-->
+            <!--android:id="@+id/create"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Create"-->
+            <!--android:onClick="createMeetup"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_margin="8dp"-->
+            <!--android:background="@color/colorAccent"/>-->
+
+
+    </LinearLayout>
+
+    <!--<Button-->
+        <!--android:text="Map"-->
+        <!--android:id="@+id/maps"-->
+        <!--android:onClick="onAddPlaceButtonClicked"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+    android:id="@+id/create"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Create"
+    android:onClick="createMeetup"
+    android:layout_weight="1"
+    android:layout_marginTop="16dp"
+    android:background="@color/colorAccent"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
